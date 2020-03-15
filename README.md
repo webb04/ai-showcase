@@ -1,6 +1,6 @@
 ## Running project
-- `yarn install`
-- `yarn start`
+- `yarn install` or `npm install`
+- `yarn start` or `npm start`
 - Open [http://localhost:3000](http://localhost:3000)
 
 
