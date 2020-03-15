@@ -1,5 +1,3 @@
-// == Fake API Service ==
-/** API service to use to complete the project.*/
 export class AgentsApi {
     listAgents(): Promise<ReadonlyArray<Agent>> {
         return asFallibleAsyncResponse(AGENTS);
@@ -15,7 +13,6 @@ export class AgentsApi {
     }
 }
 
-// == Fake API Data ==
 type AgentId = number;
 export interface Agent {
     readonly id: AgentId;
@@ -72,7 +69,6 @@ function asFallibleAsyncResponse<T>(data: T): Promise<T> {
     });
 }
     
-/** Fake list of agents. */
 const AGENTS: ReadonlyArray<Agent> = [
     {
         id: nextId(),
